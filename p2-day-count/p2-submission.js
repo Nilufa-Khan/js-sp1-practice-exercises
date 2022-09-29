@@ -9,7 +9,13 @@ switch(month){
         days=31;
         break;
     case 2:
-        days=28;
+        if(year /4 == 0){
+            days=29;
+        }
+        else{
+            days=28;
+        }
+        
         break;
      case 3:
         days=31;
